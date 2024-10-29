@@ -1,0 +1,37 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Monserrat", sans-serif;
+}
+
+.debug{
+  background-color: rgba(137, 43, 226, 0.267);
+  border: 1px solid black;
+  min-height: 50px;
+}
+
+.d-flex{
+  display: flex;
+}
+
+/* .active-bottom{
+
+} */
+
+/* .active-left{
+
+} */
+
+footer{
+  height: 80px;
+}
+
+main{
+  height: calc(100vh - 80px);
+}
+
+main aside{
+  width: 230px;
+  height: 100%;
+}
