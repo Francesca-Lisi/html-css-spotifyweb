@@ -23,15 +23,81 @@
 
 } */
 
-footer{
-  height: 80px;
+.main-wrapper{
+  height: 100vh;
 }
+
+*.h-w:hover{
+  color: white;
+} 
+
+/***************MAIN**************/
 
 main{
   height: calc(100vh - 80px);
 }
 
+h3{
+  font-size: 17px;
+  font-weight: 800;
+  padding: 10px 0 5px 0;
+}
+
+.card span{
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.container{
+  padding: 15px;
+}
+
+.app {
+  height: 100%;
+  width: calc(100% - 230px);
+  overflow: auto;
+}
+.row{
+  gap: 15px;
+}
+
+.col{
+  width: calc(100% / 6);
+}
+
+.card{
+  text-align: center;
+}
+
+.card img{
+  width: 100%;
+}
+
+/***************ASIDE**************/
+
 main aside{
   width: 230px;
   height: 100%;
 }
+
+.aside-bottom{
+  height: 80px;
+}
+
+.aside-top{
+  height: calc(100% - 80px);
+}
+
+
+/***************FOOTER**************/
+footer{
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .brano,footer .audio{
+  width: 230px;
+}
+
+
