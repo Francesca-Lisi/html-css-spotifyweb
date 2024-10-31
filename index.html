@@ -6,11 +6,16 @@
 
   <link rel="stylesheet" href="css/style.css">
 
+  <link rel="icon" href="img/favicon.ico">
+
   <!-- Monserrat font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+  
+  <!-- Font Awsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
   <title>Spotify Web</title>
 
 </head>
@@ -22,9 +27,36 @@
       <aside class="debug">
         <!-- BLOCCO MENU altezza fissa-->
         <div class=" aside-top debug">
-          <div class="logo debug">logo</div>
-          <div class="debug">menu</div>
-          <div>PLAYLIST</div>
+          <div class="logo debug">
+            <img src="img/logo.svg" alt="Spotify logo">
+          </div>
+
+          <div class="aside-menu debug">
+            <div class=" d-flex h-w green-line-left debug">
+              <img src="img/home.svg" alt="Home">
+              <a href="#">Home</a>
+            </div>
+            <div class="d-flex h-w green-line-left debug">
+              <img src="img/search.svg" alt="Cerca">
+              <a href="#">Home</a>
+            </div>
+            <div class="d-flex h-w green-line-left debug">
+              <img src="img/libreria.svg" alt="La tua libreria">
+              <a href="#">Home</a>
+            </div>
+          </div>
+
+          <div class="playlist">
+            <h3>PLAYLIST</h3>
+            <div class="d-flex debug h-w">
+              <img src="" alt="Add playlist">
+              <span>Crea Playlist</span>
+            </div>
+            <ul>
+              <li><a href="#">Nome Playlist</a></li>
+            </ul>
+
+          </div>
         </div>
 
         <!-- BLOCCO PROFILO  -->
@@ -37,20 +69,22 @@
           <a href="">effettua l'upgrade</a>
         </div>
         <div class="container debug">
-          <div class="menu-center debug">
-            <a class="h-w" href="#">in evidenza</a>
-            <a class="h-w" href="#">podcast</a>
-            <a class="h-w" href="#">classifiche</a>
-            <a class="h-w" href="#">generi e mood</a>
-            <a class="h-w" href="#">nuove uscite</a>
-            <a class="h-w" href="#">scopri</a>
+          <div class="menu-center d-flex debug">
+            <div class="menu-item h-w"><a href="#">in evidenza</a><hr class="green-line-bottom"></div>
+            <div class="menu-item h-w"><a href="#">podcast</a><hr class="green-line-bottom"></div>
+            <div class="menu-item h-w"><a href="#">classifiche</a=><hr class="green-line-bottom"></div>
+            <div class="menu-item h-w"><a href="#">generi e moood</a><hr class="green-line-bottom"></div>
+            <div class="menu-item h-w"><a href="#">nuove uscite</a><hr class="green-line-bottom"></div>
+            <div class="menu-item h-w"><a href="#">scopri</a><hr class="green-line-bottom"></div>
+            
           </div>
 
-          <section class="debug">
+          <section id="recentely" class="debug">
             <h2>Recentely played</h2>
             <div class="row d-flex debug">
               <div class="col debug">
                 <div class="card debug">
+                  <div class="play-hover d-flex"><i class="fa-regular fa-circle-play"></i></div>
                   <img src="img/metal_lifting.jpg" alt="Heavy Metal">
                   <h3>Heavy Metal</h3>
                   <span>Subtitle</span>
@@ -58,6 +92,7 @@
               </div>
               <div class="col debug">
                 <div class=" card debug">
+                  <div class="play-hover d-flex"><i class="fa-regular fa-circle-play"></i></div>
                   <img src="img/stranger.jpeg" alt="Stranger Things">
                   <h3>Stranger Things, vol.1 (a Netflix Original Series Soundtrack)</h3>
                   <span>Kyle Dixon & Michael Stein</span>
@@ -65,6 +100,7 @@
               </div>
               <div class="col debug">
                 <div class=" card debug">
+                  <div class="play-hover d-flex"><i class="fa-regular fa-circle-play"></i></div>
                   <img src="img/aquietplace.jpeg" alt="A quiet palce">
                   <h3>A quiet palce</h3>
                   <span>Subtitle</span>
@@ -72,6 +108,7 @@
               </div>
               <div class="col debug">
                 <div class=" card debug">
+                  <div class="play-hover d-flex"><i class="fa-regular fa-circle-play"></i></div>
                   <img src="img/split.jpeg" alt="Split">
                   <h3>Split</h3>
                   <span>Subtitle</span>
@@ -79,6 +116,7 @@
               </div>
               <div class="col debug">
                 <div class=" card debug">
+                  <div class="play-hover d-flex"><i class="fa-regular fa-circle-play"></i></div>
                   <img src="img/cure.jpeg" alt="A cure for wellness">
                   <h3>A cure for wellness</h3>
                   <span>Subtitle</span>
@@ -86,6 +124,7 @@
               </div>
               <div class="col debug">
                 <div class=" card debug">
+                  <div class="play-hover d-flex"><i class="fa-regular fa-circle-play"></i></div>
                   <img src="img/sinister.jpeg" alt="Sinister">
                   <h3>Sinister</h3>
                   <span>Subtitle</span>
@@ -94,18 +133,20 @@
             </div>
           </section>
 
-          <section class="debug">
+          <section id="created" class="debug">
             <h2>Creato per Jhon Doe</h2>
             <span>Più ascolti, più accurati saranno i suggerimenti.</span>
             <div class="row d-flex debug">
               <div class="col debug">
                 <div class="card debug">
+                  <div class="play-hover d-flex"><i class="fa-regular fa-circle-play"></i></div>
                   <img src="img/radar.jpeg" alt="Release Radar">
                   <h3>Release Radar</h3>
                 </div>
               </div>
               <div class="col debug">
                 <div class=" card debug">
+                  <div class="play-hover d-flex"><i class="fa-regular fa-circle-play"></i></div>
                   <img src="img/mixdaily.jpeg" alt="Daily Mix">
                   <h3>Daily Mix 1</h3>
                 </div>
@@ -125,18 +166,20 @@
             </div>
           </section>
 
-          <section class="debug">
+          <section id="artist" class="debug">
             <h2>Artisti più popolari</h2>
             <span>Più ascolti, più accurati saranno i suggerimenti.</span>
             <div class="row d-flex debug">
               <div class="col debug">
                 <div class="card debug">
+                  <div class="play-hover d-flex"><i class="fa-regular fa-circle-play"></i></div>
                   <img src="img/youg.jpeg" alt="Lana del Rey">
                   <h3>Lana del Rey</h3>
                 </div>
               </div>
               <div class="col debug">
                 <div class=" card debug">
+                  <div class="play-hover d-flex"><i class="fa-regular fa-circle-play"></i></div>
                   <img src="img/einaudi.jpeg" alt="Ludovico Einaudi">
                   <h3>Ludovico Einaudi</h3>
                 </div>

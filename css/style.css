@@ -4,17 +4,17 @@
   box-sizing: border-box;
   font-family: "Monserrat", sans-serif;
 }
-.main-top::-webkit-scrollbar{
+.container::-webkit-scrollbar{
   width: 15px;
   position: fixed;
 }
 
-.main-top::-webkit-scrollbar-track{
+.container::-webkit-scrollbar-track{
   background-color: #FAFAFA;
   width: 15px;
 }
 
-.main-top::-webkit-scrollbar-thumb{
+.container::-webkit-scrollbar-thumb{
   background-color:#C8C8C8;
   border-radius: 10px;
   border: 3px solid #FAFAFA;
@@ -23,28 +23,41 @@
 .debug{
   background-color: rgba(137, 43, 226, 0.267);
   border: 1px solid black;
-  min-height: 50px;
 }
 
 .d-flex{
   display: flex;
 }
 
-/* .active-bottom{
-
-} */
-
-/* .active-left{
-
-} */
+.header-transparent a:hover{
+  padding: 13px 41px;
+  font-size: 15px;
+  border-radius: 25px;
+}
 
 .main-wrapper{
   height: 100vh;
 }
 
-*.h-w:hover{
+.h-w:hover a{
   color: white;
 } 
+
+.menu-item:hover hr{
+  display: block;
+}
+
+.card:hover{
+  cursor: pointer;
+}
+
+.card:hover .play-hover{
+  display: flex;
+}
+
+.green-line-left:hover{
+  border-left: 3px solid #ADFF2F;
+}
 
 /***************MAIN**************/
 /* MAIN TOP */
@@ -53,11 +66,13 @@ main{
 }
 
 .menu-center{
-  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-top{
   position: relative;
+  background-color: #141922;
 }
 
 .main-top a {
@@ -65,7 +80,7 @@ main{
   text-decoration: none;
   font-size: 14px;
   font-weight: 700;
-  padding: 5px 10px;
+  color: #6D6D6D;
 }
 
 .header-transparent{
@@ -74,7 +89,8 @@ main{
   height: 90px;
   width: calc(100% - 230px);
   position: fixed;
-  order: 100;
+  z-index: 100;
+  background-color: #080b1221;
 }
 
 .header-transparent a{
@@ -85,6 +101,18 @@ main{
   margin-right: 15px;
 }
 
+.main-top .menu-item{
+  padding: 10px 15px;
+  height: 20px;
+  text-align: center;
+}
+
+hr.green-line-bottom{
+  border-bottom: 3px solid #ADFF2F;
+  width: 30px;
+  margin: 2px auto;
+  display: none;
+}
 
 /* SECTIONS */
 section{
@@ -94,29 +122,35 @@ section{
 h2{
   font-weight: 800;
   padding-bottom: 5px;
+  color: white;
 }
 
 h3{
   font-size: 17px;
   font-weight: 800;
   padding: 10px 0 5px 0;
+  color: white;
 }
 
 section span{
   font-size: 14px;
   font-weight: 700;
+  color: #6D6D6D;
 }
 
 .container{
+  overflow: auto;
   padding: 15px;
   margin-top: 90px;
+  height: calc(100% - 90px);
+  width: 100%; 
 }
 
 .main-top {
   height: 100%;
   width: calc(100% - 230px);
-  overflow: auto;
 }
+
 .row{
   gap: 15px;
 }
@@ -128,10 +162,34 @@ section span{
 
 .card{
   text-align: center;
+  position: relative;
 }
 
 .card img{
   width: 100%;
+}
+
+#artist img{
+  border-radius: 50%;
+}
+
+.play-hover{
+  display: none;
+  position: absolute;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: #00000080;
+  justify-content: center;
+  align-items: center;
+}
+
+.play-hover i{
+  font-size: 3vw;
+  color: white;
+}
+
+#artist .play-hover{
+  border-radius: 50%;
 }
 
 /***************ASIDE**************/
@@ -149,6 +207,34 @@ main aside{
   height: calc(100% - 80px);
 }
 
+.aside-top .logo{
+  height: 90px;
+
+}
+
+.aside-top .logo img{
+  height: 50%;
+  margin: 20px;
+}
+
+.aside-menu div{
+  padding-left: 20px;
+  align-items: center;
+}
+
+.aside-menu img{
+  height: 24px;
+  margin-right: 5px;
+
+}
+
+.aside-menu a{
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #6D6D6D;
+}
 
 /***************FOOTER**************/
 footer{
