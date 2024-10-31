@@ -59,6 +59,14 @@
   border-left: 3px solid #ADFF2F;
 }
 
+.playlist .d-flex:hover a{
+  color: white;
+}
+
+.playlist .d-flex:hover i{
+  background-color: white;
+}
+
 /***************MAIN**************/
 /* MAIN TOP */
 main{
@@ -209,7 +217,6 @@ main aside{
 
 .aside-top .logo{
   height: 90px;
-
 }
 
 .aside-top .logo img{
@@ -235,6 +242,47 @@ main aside{
   line-height: 40px;
   color: #6D6D6D;
 }
+
+.playlist{
+  padding: 0 15px;
+}
+
+.playlist h3{
+  font-size: 14px;
+}
+
+.playlist .d-flex a{
+  font-size: 16px;
+  font-weight: 700;
+  color: #6D6D6D;
+}
+
+.playlist i{
+  padding: 10px;
+  margin-right: 10px;
+  background-color: #C8C8C8;
+  font-weight: 900;
+  font-size: 18px;
+  color: #000000;
+}
+
+.playlist .d-flex{
+  align-items: center;
+}
+
+
+.playlist li{
+  list-style-type: none;
+  padding-top: 10px;
+}
+
+.playlist a{
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  color: #6D6D6D;
+}
+
 
 /***************FOOTER**************/
 footer{
