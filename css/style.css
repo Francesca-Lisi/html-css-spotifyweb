@@ -20,10 +20,10 @@
   border: 3px solid #FAFAFA;
 }
 
-.debug{
+/* .debug{
   background-color: rgba(137, 43, 226, 0.267);
   border: 1px solid black;
-}
+} */
 
 .d-flex{
   display: flex;
@@ -40,8 +40,17 @@
 }
 
 .h-w:hover a{
-  color: white;
+  color: #FAFAFA;
 } 
+
+.brano .h-w:hover i{
+  color: #FAFAFA;
+}
+
+.brano a.h-w-sub:hover{
+  color: #FAFAFA;
+  text-decoration: underline;
+}
 
 .menu-item:hover hr{
   display: block;
@@ -66,10 +75,11 @@
 .playlist .d-flex:hover i{
   background-color: white;
 }
+
 footer .play-bar:hover .barra .bar-green,
 footer .play-bar:hover .barra .circle,
-footer .audio:hover .barra .bar-green,
-footer .audio:hover .barra .circle{
+footer .barra:hover .bar-green,
+footer .barra:hover .circle{
   display: inline;
 }
 
@@ -211,6 +221,7 @@ section span{
 main aside{
   width: 230px;
   height: 100%;
+  background-color: #000000;
 }
 
 .aside-top{
@@ -247,6 +258,7 @@ main aside{
 
 .playlist{
   padding: 0 15px;
+  height: calc(100% - 220px);
 }
 
 .playlist h3{
@@ -272,6 +284,10 @@ main aside{
   align-items: center;
 }
 
+.playlist ul{
+  overflow: auto;
+  height: calc(100% - 80px);
+}
 
 .playlist li{
   list-style-type: none;
@@ -330,18 +346,38 @@ footer{
   height: 80px;
   justify-content: space-between;
   align-items: center;
+  background-color: #282828;
 }
 
 footer .brano,footer .audio{
   width: 230px;
   padding: 0 5px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .audio a i{
+  color: #FAFAFA;
 }
 
 footer img{
   height: 45px;
+  padding: 0 10px;
 }
+
+.like{
+  gap: 15px;
+}
+
+.brano .like i{
+  color: #6D6D6D;
+  font-size: 16px;
+
+}
+
 .play-bar div{
   justify-content: center;
+  align-items: center;
 }
 
 .play-bar i{
@@ -350,8 +386,27 @@ footer img{
   font-size: 18px;
 }
 
-.play-bar i .fa-circle-play{
+.play-bar a:nth-child(3) i{
   font-size: 30px;
+}
+
+footer .brano div{
+  align-items: center;
+}
+
+.brano h3{
+  font-size: 13px;
+  font-weight: 800;
+  color: #FAFAFA;
+  padding: 0;
+}
+
+.brano a{
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: 500;
+  color: #6D6D6D;
+  line-height: 0;
 }
 
 footer .play-bar-bottom{
@@ -359,8 +414,14 @@ footer .play-bar-bottom{
   align-items: center;
 }
 
+footer .play-bar-bottom span{
+  font-size: 10px;
+  color: #FAFAFA;
+  font-weight: 800;
+}
+
 footer div.barra{
-  width: 25vw;
+  width: 30vw;
   height: 3px;
   background-color:#6D6D6D;
   margin: 10px 30px;
@@ -396,13 +457,6 @@ footer .barra .circle{
   top: -3.5px;
   left: 25%;
   display: none;
-}
-
-footer .audio{
-  justify-content: space-between;
-  align-items: center;
-  gap: 15px;
-  color: #FAFAFA;
 }
 
 footer .audio .barra{
