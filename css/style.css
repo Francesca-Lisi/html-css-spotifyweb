@@ -207,10 +207,6 @@ main aside{
   height: 100%;
 }
 
-.aside-bottom{
-  height: 80px;
-}
-
 .aside-top{
   height: calc(100% - 80px);
 }
@@ -283,6 +279,45 @@ main aside{
   color: #6D6D6D;
 }
 
+.aside-bottom{
+  height: 80px;
+  padding: 0 15px;
+}
+
+.aside-bottom.download{
+  border-bottom: 1px solid #6D6D6D;
+}
+
+.aside-bottom .download, 
+.aside-bottom .profile{
+  padding: 8px 0;
+}
+
+.aside-bottom .download a{
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  color: #6D6D6D;
+  margin-left: 10px;
+}
+.aside-bottom .download img{
+  width: 15px;
+}
+
+.aside-bottom .profile img{
+  width: 25px;
+  height: 25px;
+  background-color: #808080;
+  border-radius: 50%;
+}
+
+.aside-bottom .profile a{
+  font-size: 17px;
+  font-weight: 800;
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+}
 
 /***************FOOTER**************/
 footer{
@@ -293,6 +328,41 @@ footer{
 
 footer .brano,footer .audio{
   width: 230px;
+  padding: 0 5px;
 }
 
+footer img{
+  height: 45px;
+}
 
+footer .play-bar-bottom{
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .play-bar-bottom div.barra{
+  width: 25vw;
+  height: 3px;
+  background-color:#6D6D6D;
+  margin: 10px 30px;
+  position: relative;
+  border-radius: 20%;
+}
+
+footer .play-bar-bottom .barra .bar-white{
+  position: absolute;
+  width: 25%;
+  height: 3px;
+  border-radius: 20%;
+  background-color: #FAFAFA;
+}
+
+footer .play-bar-bottom .barra .bar-green{
+  position: absolute;
+  width: 25%;
+  height: 3px;
+  border-radius: 20%;
+  background-color: #ADFF2F;
+  z-index: 100;
+  display: none;
+}

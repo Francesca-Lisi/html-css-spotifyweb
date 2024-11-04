@@ -25,6 +25,8 @@
 
     <main class="d-flex debug">
       <aside class="debug">
+
+
         <!-- BLOCCO MENU altezza fissa-->
         <div class=" aside-top debug">
           <div class="logo debug">
@@ -46,6 +48,8 @@
             </div>
           </div>
 
+
+
           <div class="playlist">
             <h3>PLAYLIST</h3>
             <div class="d-flex">
@@ -66,8 +70,15 @@
         </div>
 
         <!-- BLOCCO PROFILO  -->
-        <div class=" aside-bottom debug">
-          
+        <div class="aside-bottom debug">
+          <div class="download d-flex h-w debug">
+            <img src="img/download.svg" alt="Download">
+            <a href="#">Installa App</a>
+          </div>
+          <div class="profile d-flex debug">
+            <img src="img/profile.svg" alt="Img Profile">
+            <a href="#">John Doe</a>
+          </div>
         </div>
 
       </aside>
@@ -213,9 +224,47 @@
     </main>
 
     <footer class="d-flex debug">
-      <div class="brano d-flex debug">ha la stessa larghezza di aside</div>
-      <div class="play-bar debug">larghezza variabile</div>
-      <div class="audio d-flex debug"> ha la stessa larghezza di aside</div>
+      <!-- BRANO stessa lunghezza di aside -->
+      <div class="brano d-flex debug">
+        <div class="d-flex">
+          <img src="img/_AM__(Arctic_Monkeys).jpg" alt="AM Arctic Monkeys">
+          <div>
+            <span>Mad Sound</span>
+            <span>Arctic Monkeys</span>
+          </div>
+        </div>
+        <div>
+          <i class="fa-regular fa-heart"></i>
+          <i class="fa-regular fa-folder"></i>
+        </div>
+      </div>
+
+      <!-- PLAY BAR lunghezza variabile -->
+      <div class="play-bar debug">
+        <div>
+          <i class="fa-solid fa-shuffle"></i>
+          <i class="fa-solid fa-backward-step"></i>
+          <i class="fa-regular fa-circle-play"></i>
+          <i class="fa-solid fa-forward-step"></i>
+          <i class="fa-solid fa-rotate-left"></i>
+        </div>
+
+        <div class="play-bar-bottom d-flex">
+          <span>0:25</span>
+          <div class="barra">
+            <div class="bar-white"></div>
+            <div class="bar-green"></div>
+          </div>
+          <span>4:35</span>
+        </div>
+      </div>
+
+      <!-- AUDIO stessa lunghezza di aside -->
+      <div class="audio d-flex debug"> 
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-desktop"></i>
+        <i class="fa-solid fa-volume-high"></i>
+      </div>
 
     </footer>
   </div>
