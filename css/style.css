@@ -97,6 +97,10 @@ main{
 .main-top{
   position: relative;
   background-color: #141922;
+  height: 100%;
+  width: calc(100% - 230px);
+  height: 100%;
+  overflow: auto;
 }
 
 .main-top a {
@@ -108,13 +112,14 @@ main{
 }
 
 .header-transparent{
+  position: sticky;
+  top: 0;
   flex-direction: row-reverse;
   align-items: center;
   height: 90px;
-  width: calc(100% - 230px);
-  position: fixed;
+  width: 100%;
   z-index: 100;
-  background-color: #080b1221;
+  background-color: rgba(0,0,0,0.8);
 }
 
 .header-transparent a{
@@ -163,16 +168,9 @@ section span{
 }
 
 .container{
-  overflow: auto;
   padding: 15px;
-  margin-top: 90px;
   height: calc(100% - 90px);
   width: 100%; 
-}
-
-.main-top {
-  height: 100%;
-  width: calc(100% - 230px);
 }
 
 .row{
@@ -306,7 +304,7 @@ main aside{
   padding: 0 15px;
 }
 
-.aside-bottom.download{
+.aside-bottom .download{
   border-bottom: 1px solid #6D6D6D;
 }
 
