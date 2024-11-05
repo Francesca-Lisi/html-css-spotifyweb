@@ -4,6 +4,8 @@
   box-sizing: border-box;
   font-family: "Monserrat", sans-serif;
 }
+
+/*************SCROLLBAR***********/
 .container::-webkit-scrollbar{
   width: 15px;
   position: fixed;
@@ -24,20 +26,18 @@
   background-color: rgba(137, 43, 226, 0.267);
   border: 1px solid black;
 } */
-
+/************UTILITY**************/
 .d-flex{
   display: flex;
-}
-
-.header-transparent a:hover{
-  padding: 13px 41px;
-  font-size: 15px;
-  border-radius: 25px;
 }
 
 .main-wrapper{
   height: 100vh;
 }
+
+/**************EFFETTI HOVER****************/
+
+/*cambio colore*/
 
 .h-w:hover a{
   color: #FAFAFA;
@@ -47,14 +47,30 @@
   color: #FAFAFA;
 }
 
+.aside-bottom .h-w:hover a{
+  color: #FAFAFA;
+}
+
 .brano a.h-w-sub:hover{
   color: #FAFAFA;
   text-decoration: underline;
 }
 
+/*Pulsante diventa più grande*/
+
+.header-transparent a:hover{
+  padding: 13px 41px;
+  font-size: 15px;
+  border-radius: 25px;
+}
+
+/*Menu orizzontale nel main*/
+
 .menu-item:hover hr{
   display: block;
 }
+
+/*Cards*/
 
 .card:hover{
   cursor: pointer;
@@ -63,6 +79,9 @@
 .card:hover .play-hover{
   display: flex;
 }
+
+
+/*Aside*/
 
 .green-line-left:hover{
   border-left: 3px solid #ADFF2F;
@@ -76,11 +95,18 @@
   background-color: white;
 }
 
+/*Footer*/
+
 footer .play-bar:hover .barra .bar-green,
 footer .play-bar:hover .barra .circle,
 footer .barra:hover .bar-green,
 footer .barra:hover .circle{
   display: inline;
+}
+
+footer .play-bar a:nth-child(3) i:hover{
+  font-size: 35px;
+  margin: 2.5px 7.5px;
 }
 
 /***************MAIN**************/
@@ -467,7 +493,18 @@ footer .audio .barra{
 }
 
 /**************** RESPONSIVE *****************/
+
 @media screen and (max-width: 1100px){
+  /*MAIN: menu orizzontale*/
+  .main-top .menu-center{
+    flex-wrap: wrap;
+  }
+
+  .main-top .menu-item {
+    margin: 10px 0;
+  } 
+
+  /*MAIN: cards*/
   .row{
     flex-wrap: wrap;
   } 
@@ -476,14 +513,7 @@ footer .audio .barra{
     width: calc(100% / 4 - 15px);
   }
 
-  .main-top .menu-center{
-    flex-wrap: wrap;
-  }
-
-  .main-top .menu-item {
-    margin: 10px 0;
-  }
-
+  /*FOOTER: andamento icone sx*/
   .brano .like{
     flex-wrap: wrap;
   }  
@@ -492,10 +522,12 @@ footer .audio .barra{
 
 
 @media screen and (max-width: 700px){
-
+  /*MAIN: cards wrap*/
   .col{
     width: calc(100% / 2 - 15px);
   }
+
+  /*FOOTER: larghezza delle 3 componenti*/
   footer .brano,footer .audio{
     width: 25%;
   }
@@ -506,16 +538,20 @@ footer .audio .barra{
 }
 
 
+
 @media screen and (max-width: 600px){
 
+  /*MAIN: nuova larghezza del main sul calc dell'aside*/
   .main-top{
     width: calc(100% - 60px);
   }
 
+  /*MAIN: menu orizzontale*/
   main aside{
     width: 60px;
   }
 
+  /*ASIDE*/
   .aside-top .logo{
     height: 40px;
   }
@@ -545,6 +581,8 @@ footer .audio .barra{
     display: none;
   }
 
+
+  /*FOOTER*/
   footer div.barra{
     margin: 10px 5px;
   }
