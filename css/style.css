@@ -87,6 +87,7 @@ footer .barra:hover .circle{
 /* MAIN TOP */
 main{
   height: calc(100vh - 80px);
+  width: 100%;
 }
 
 .menu-center{
@@ -233,6 +234,10 @@ main aside{
 .aside-top .logo img{
   height: 50%;
   margin: 20px;
+}
+
+.aside-top .logo img:first-child{
+display: none;
 }
 
 .aside-menu div{
@@ -459,4 +464,88 @@ footer .barra .circle{
 
 footer .audio .barra{
   margin: 10px 0;
+}
+
+/**************** RESPONSIVE *****************/
+@media screen and (max-width: 1100px){
+  .row{
+    flex-wrap: wrap;
+  } 
+
+  .col{
+    width: calc(100% / 4 - 15px);
+  }
+
+  .main-top .menu-center{
+    flex-wrap: wrap;
+  }
+
+  .main-top .menu-item {
+    margin: 10px 0;
+  }
+
+  .brano .like{
+    flex-wrap: wrap;
+  }  
+}
+
+
+
+@media screen and (max-width: 700px){
+
+  .col{
+    width: calc(100% / 2 - 15px);
+  }
+  footer .brano,footer .audio{
+    width: 25%;
+  }
+  footer .play-bar{
+    width: 40%;
+  }
+
+}
+
+
+@media screen and (max-width: 600px){
+
+  .main-top{
+    width: calc(100% - 60px);
+  }
+
+  main aside{
+    width: 60px;
+  }
+
+  .aside-top .logo{
+    height: 40px;
+  }
+
+  .aside-top .logo img:first-child{
+    display: block;
+    height: 28px;
+    margin: 10px auto;
+  }
+
+  .aside-top .logo img:last-child{
+    display: none;
+  }
+
+  .aside-bottom .download,
+  .aside-bottom .profile{
+    justify-content: center;
+    border-bottom: none;
+  }
+
+  .aside-menu a,
+  .aside-bottom a{
+    display: none;
+  }
+
+  div.playlist{
+    display: none;
+  }
+
+  footer div.barra{
+    margin: 10px 5px;
+  }
 }
