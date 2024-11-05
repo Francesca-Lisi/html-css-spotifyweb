@@ -109,6 +109,8 @@ footer .play-bar a:nth-child(3) i:hover{
   margin: 2.5px 7.5px;
 }
 
+
+
 /***************MAIN**************/
 /* MAIN TOP */
 main{
@@ -378,6 +380,11 @@ footer{
   background-color: #282828;
 }
 
+footer img{
+  height: 45px;
+  padding: 0 10px;
+}
+
 footer .brano,footer .audio{
   width: 230px;
   padding: 0 5px;
@@ -385,38 +392,23 @@ footer .brano,footer .audio{
   align-items: center;
 }
 
+footer .audio .barra{
+  margin: 10px 0;
+}
 footer .audio a i{
   color: #FAFAFA;
-}
-
-footer img{
-  height: 45px;
-  padding: 0 10px;
 }
 
 .like{
   gap: 15px;
 }
 
+/*Footer brano: sezione a sx*/
+
 .brano .like i{
   color: #6D6D6D;
   font-size: 16px;
 
-}
-
-.play-bar div{
-  justify-content: center;
-  align-items: center;
-}
-
-.play-bar i{
-  margin: 5px 10px;
-  color: #FAFAFA;
-  font-size: 18px;
-}
-
-.play-bar a:nth-child(3) i{
-  font-size: 30px;
 }
 
 footer .brano div{
@@ -438,6 +430,23 @@ footer .brano div{
   line-height: 0;
 }
 
+/*Footer play-bar: sezione al centro*/
+
+.play-bar div{
+  justify-content: center;
+  align-items: center;
+}
+
+.play-bar i{
+  margin: 5px 10px;
+  color: #FAFAFA;
+  font-size: 18px;
+}
+
+.play-bar a:nth-child(3) i{
+  font-size: 30px;
+}
+
 footer .play-bar-bottom{
   justify-content: space-between;
   align-items: center;
@@ -448,6 +457,8 @@ footer .play-bar-bottom span{
   color: #FAFAFA;
   font-weight: 800;
 }
+
+/*Barra audio*/
 
 footer div.barra{
   width: 30vw;
@@ -488,9 +499,7 @@ footer .barra .circle{
   display: none;
 }
 
-footer .audio .barra{
-  margin: 10px 0;
-}
+
 
 /**************** RESPONSIVE *****************/
 
@@ -552,6 +561,8 @@ footer .audio .barra{
   }
 
   /*ASIDE*/
+
+  /*Aside logo*/
   .aside-top .logo{
     height: 40px;
   }
@@ -566,10 +577,9 @@ footer .audio .barra{
     display: none;
   }
 
-  .aside-bottom .download,
-  .aside-bottom .profile{
-    justify-content: center;
-    border-bottom: none;
+    /*Aside menu*/
+  .aside-menu div{
+    margin: 10px auto;
   }
 
   .aside-menu a,
@@ -577,9 +587,20 @@ footer .audio .barra{
     display: none;
   }
 
+  /*Aside playlist che scompare*/
   div.playlist{
     display: none;
   }
+
+  /*Aside bottom*/
+  .aside-bottom .download,
+  .aside-bottom .profile{
+    justify-content: center;
+    border-bottom: none;
+  }
+
+
+
 
 
   /*FOOTER*/
