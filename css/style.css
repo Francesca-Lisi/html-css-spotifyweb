@@ -224,6 +224,8 @@ section span{
   border-radius: 50%;
 }
 
+/*hover trasparente sulle img delle card*/
+
 .play-hover{
   display: none;
   position: absolute;
@@ -251,6 +253,8 @@ main aside{
   background-color: #000000;
 }
 
+/*Aside Top: logo*/
+
 .aside-top{
   height: calc(100% - 80px);
 }
@@ -268,6 +272,8 @@ main aside{
 display: none;
 }
 
+
+/*Aside Menu: elenco con icona*/
 .aside-menu div{
   padding-left: 20px;
   align-items: center;
@@ -287,6 +293,7 @@ display: none;
   color: #6D6D6D;
 }
 
+/*Aside playlist*/
 .playlist{
   padding: 0 15px;
   height: calc(100% - 220px);
@@ -332,6 +339,7 @@ display: none;
   color: #6D6D6D;
 }
 
+/*Aside bottom*/
 .aside-bottom{
   height: 80px;
   padding: 0 15px;
